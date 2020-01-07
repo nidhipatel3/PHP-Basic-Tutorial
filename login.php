@@ -2,8 +2,6 @@
 <html>
 <head>
 	<title></title>
-
-<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -23,3 +21,18 @@
 
 </body>
 </html>
+
+<script type="text/javascript">
+	
+function validateform() {
+
+var x=document.forms["myform"]["username"].value;
+var y=document.forms["myform"]["password"].value;
+if(x=="" || y=="")
+{
+alert("enter name and password");	
+return false;
+}
+}
+
+</script>
