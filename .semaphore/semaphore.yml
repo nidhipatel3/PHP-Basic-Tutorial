@@ -10,7 +10,7 @@ blocks:
       jobs:
         - name: composer
           commands:
-            - sem-version php 7.4 checkout cache restore composer install npm install cache store
+            - sem-version php 7.2 checkout cache restore composer install npm install cache store
       env_vars:
         - name: APP_ENV
           value: prod
