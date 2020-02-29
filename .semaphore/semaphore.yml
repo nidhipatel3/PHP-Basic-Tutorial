@@ -29,3 +29,17 @@ blocks:
         - name: dusk
           commands:
             - 'php artisan dusk:chrome-driver 79 php artisan serve --env=.env.dusk.local --port=8010 & php artisan dusk'
+        - name: phpmd
+          commands:
+            - php vendor/bin/phpmd app/ text phpms_rulest.xml
+        - name: phpcs
+          commands:
+            - php vendor/bin/phpcs app --report-full --standard=PEAR
+        - name: phpcpd
+          commands:
+            - 'curl -L https://phar.phpunit.de/phpcpd.phar -0 phpcpd'
+  - name: 'Block #3'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands: []
